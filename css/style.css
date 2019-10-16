@@ -1,0 +1,142 @@
+a{
+    padding:15px;
+    background-color:orange;
+    /* background:#ccc;  */
+    text-align: center;
+    cursor:pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+.rtext{
+    background-color: bisque;
+    float: right;
+    margin-right: 5%;
+}
+.ltext{
+    background-color: bisque;
+    float:left;
+    margin-left: 5%;
+}
+html,body{
+    padding:0;
+ margin:0;
+}
+
+.login, .register, .reset, .forgot{
+    padding: 0;
+    margin-top: 50px;
+    text-align: center; 
+}
+
+input {
+    padding:5px;
+    margin:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color:rgb(12, 11, 11);
+}
+.leftdiv 
+  { 
+  float: left; 
+  width: 25px;
+  border: 6px solid black;
+  } 
+ 
+  .abc{
+    background-color: rgb(243, 240, 240);
+    width: 200px;
+    height: 51px;
+    position: relative;
+    left: 20%;
+    text-align: center;
+    top: 35%;
+    transform: translate(-85%, -318%);
+}
+div.ex3 {
+    background-color: rgb(140, 142, 143);
+    width: 900px;
+    height: 450px;
+    position: relative;
+    overflow: auto;
+    transform: translate(15%, 2%);
+  }
+.def{
+    background-color: rgb(161, 161, 161);
+    width: 500px;
+    height: 51px;
+    position: relative;
+    left: 20%;
+    text-align: center;
+    top: 41%;
+    transform: translate(-84%, -338%);
+
+}
+
+
+button{
+    padding:15px 25px;
+    margin-top: 5px;
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    background-color:greenyellow;
+}
+span{
+    text-align: center;
+    margin-top: 5px;
+}
+.align{
+    background-color: rgb(226, 226, 226);
+    width: 233px;
+    height:53px;
+    transform: translate(278%, -150%);
+    position: absolute;
+    text-align: center;
+    
+}
+ul{
+    width:40px;
+    padding-left: 0pt;
+    padding:0;
+    margin:0;
+}
+div{
+    padding:0;
+    margin:0;
+}
+
+.message{
+    width: 900px;
+    border: 1px solid black
+}
+.chatarea{
+position: absolute;
+margin-top: 600px;
+margin-left: 150px;
+}
+
+.sender{
+    position: relative;
+    margin-left: 90%;
+}
+.username{
+    position: absolute;
+    margin-left: 180px;
+}
+
+span,.nav{
+    float: center;
+    clear: center;
+}
