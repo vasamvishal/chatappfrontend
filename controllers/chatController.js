@@ -1,10 +1,10 @@
 
-app.controller('chatController', function($scope,$location,chatService,userService,SocketService) 
+app.controller('chatController', function($scope,$filter,chatService,userService,SocketService) 
 {
+    $scope.HHmmss = $filter('date')(new Date(), 'HH:mm:ss');
     $scope.msgData = [];
     $scope.currUser = sessionStorage.getItem('Username');
     $scope.currUserId=sessionStorage.getItem('UserID');
-    
     // let message = document.getElementById('message')
     $scope.getUser = (item) =>
     {
@@ -45,7 +45,7 @@ app.controller('chatController', function($scope,$location,chatService,userServi
         $scope.msgData.push(sendMsgData);
         console.log($scope.msgData);
     }
-   
+  
     var senderId = sessionStorage.getItem('UserID');
     SocketService.on(senderId, function (message) {
         console.log('Message emitted');
@@ -54,7 +54,8 @@ app.controller('chatController', function($scope,$location,chatService,userServi
         {
             
             if ($scope.msgData === undefined) 
-                $scope.msgData = message;
+            {console.log("sessionstorage",message)
+                $scope.msgData = message;}
             else 
                 $scope.msgData.push(message); 
                

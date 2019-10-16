@@ -1,5 +1,6 @@
 <center>
         <button  ng-click="logout()" ui-sref="login">LogOut</button></br>
+        
 </center>
 
 
@@ -22,9 +23,9 @@
   
     <div ng-repeat="y in msgData">
        
-        <span class="rtext"ng-show="currUserId!= y.senderId">message:{{y.message}}</span><br>
+        <span class="rtext"ng-show="currUserId!= y.senderId">:message:{{y.message}} </span></span><br>
         
-        <span class="ltext"ng-show="currUserId === y.senderId">message:{{y.message}}</span></br>
+        <span class="ltext"ng-show="currUserId === y.senderId">:message:{{y.message}}</span></span></br>
         
     </div>
     </center><div>
