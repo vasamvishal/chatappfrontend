@@ -53,7 +53,7 @@ app.controller("registerController", function($scope,userService)
          console.log(response.data);
         // $window.location.href = 'http://localhost:3000/#!/login';
       }).catch(function(response)
-      {  
+      {  console.log(response);
          alert('Registration unsuccessful');
          console.log(response.data);
       })
